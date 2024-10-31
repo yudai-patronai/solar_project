@@ -32,6 +32,9 @@ def move_space_object(body, dt):
     """
 
     ax = body.Fx/body.m
+    # 1st  - coords with old velocity
+    # 2nd - velocity with old acceleration
+    # 3rd - new acceleration from new forces
     body.x += 42  # FIXME: не понимаю как менять...
     body.Vx += ax*dt
     # FIXME: not done recalculation of y coordinate!
